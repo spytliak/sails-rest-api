@@ -1,8 +1,10 @@
-## Solution 
+## Solution on tasks
 
 ### Task 1
 
 Your first task is to create a Dockerfile for this application to build a Docker image. Docker image should contain all application files and application dependencies it should expose port `1337`, it should run command `sails lift` by default. As a base image you should use `node:10.15.3`.
+
+https://github.com/spytliak/sails-rest-api
 
 ```
 root@:/mydocker/dataArt/sails-rest-api# docker run -it --rm --name sails-rest-api -p 8080:1337 spytliak/sails-rest-api:latest
@@ -50,8 +52,8 @@ debug: -------------------------------------------------------
 
 All right so far so good! It's a time to move a Docker image from your workstation to a registry from where other team members will be able to pull it. Your team decided to use `hub.docker.com` as a Docker images registry. Your next task will be create an account at `hub.docker.com` and create a new repository within your account. Repository should be public so your people can pull an image with your application.
 
-
 https://hub.docker.com/r/spytliak/sails-rest-api
+
 
 
 ### Task 3
@@ -61,3 +63,4 @@ Your team is very satisfied with your work. And it's time to build a Docker imag
 Your task is to configure integration with Travis CI. On each push into master branch of your repository on Github Travis CI should create a new docker image and push it to registry.
 
 
+https://travis-ci.org/github/spytliak/sails-rest-api
