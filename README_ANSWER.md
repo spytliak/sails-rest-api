@@ -4,6 +4,7 @@
 
 Your first task is to create a Dockerfile for this application to build a Docker image. Docker image should contain all application files and application dependencies it should expose port `1337`, it should run command `sails lift` by default. As a base image you should use `node:10.15.3`.
 
+```
 root@:/mydocker/dataArt/sails-rest-api# docker run -it --rm --name sails-rest-api -p 8080:1337 spytliak/sails-rest-api:latest
 
  info: Starting app...
