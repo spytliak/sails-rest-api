@@ -1,0 +1,8 @@
+.git/
+.gitignore
+.dockerignore
+node_modules/
+Dockerfile
+package-lock.json
+travis.log
+.travis.yml
