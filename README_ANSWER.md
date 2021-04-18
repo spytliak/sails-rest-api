@@ -45,7 +45,7 @@ debug: -------------------------------------------------------
 <- GET /                                      (23ms 200)
  |  Requesting user is a guest, so show the public landing page.
  |  view: pages/homepage
-
+```
 
 
 ### Task 2
